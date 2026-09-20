@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iTantra — Offline Multilingual Communication</title>
+  <meta name="description" content="Communicate through speech and text, even in low-bandwidth environments. 100% offline Speech-to-Text and Text-to-Speech over Wi-Fi Direct and Bluetooth mesh.">
+  <meta name="keywords" content="iTantra, Offline communication, Speech to Text, Text to Speech, Indian languages, Wi-Fi Direct, Bluetooth LE, mesh, disaster recovery, Smart India Hackathon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="iTantra — Offline Multilingual Communication">
+  <meta property="og:description" content="Zero-cloud offline voice and text communication for low-bandwidth and disaster-resilient environments.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/screenshots/screen_home.png">
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- ── Header / Navigation ──────────────────────────────────────────────── -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand" aria-label="iTantra Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+            <line x1="12" y1="19" x2="12" y2="22"></line>
+          </svg>
+        </div>
+        <span>iTantra</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">Architecture</a></li>
+          <li><a href="#languages" class="nav-link">Languages</a></li>
+          <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
+          <li><a href="#install" class="nav-link">Install Guide</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/rajvardhan-06/itantra" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="View Source on GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="#download" class="btn btn-primary btn-sm js-download-btn" aria-label="Download Android APK">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download APK</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Hero Section ─────────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge badge-primary">
+          <span class="dot"></span>
+          <span>100% Offline · Zero Cloud Dependency</span>
+        </div>
+
+        <h1 class="hero-title">
+          iTantra — <span class="text-gradient">Offline Multilingual</span> Communication
+        </h1>
+
+        <p class="hero-subtitle">
+          Communicate through speech and text, even in low-bandwidth environments.
+          Voice is transcribed on-device, transmitted as micro-payloads over Wi-Fi Direct and Bluetooth, and read aloud offline.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#download" class="btn btn-primary btn-lg js-download-btn" id="heroDownloadBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download APK (v1.0.0)</span>
+          </a>
+          <a href="#features" class="btn btn-outline btn-lg">
+            <span>Explore Features</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>Signed v2 APK</span>
+          </div>
+          <div class="hero-meta-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Android 7.0+ (API 24+)</span>
+          </div>
+          <div class="hero-meta-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <span>11.9 MB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Mockup Preview -->
+      <div class="phone-showcase">
+        <div class="phone-glow"></div>
+        <div class="phone-frame">
+          <div class="phone-island"></div>
+          <img id="heroPhoneScreen" class="phone-screen" src="/assets/screenshots/screen_home.png" alt="iTantra Home Dashboard" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats Strip ───────────────────────────────────────────────────────── -->
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-value text-gradient">10</div>
+        <div class="stat-label">Indian Scheduled Languages</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value text-gradient">0</div>
+        <div class="stat-label">Cloud Servers Needed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value text-gradient">99%</div>
+        <div class="stat-label">Bandwidth Reduction vs Audio</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value text-gradient">100%</div>
+        <div class="stat-label">IEEE 802.3 CRC32 Checked</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features Section ─────────────────────────────────────────────────── -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Capabilities</span>
+        <h2 class="section-title">Engineered for Disconnected & Low-Resource Environments</h2>
+        <p class="section-desc">
+          When cellular towers fail or internet infrastructure is absent, iTantra establishes direct, secure voice-to-text communication between nearby devices.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+              <line x1="12" y1="19" x2="12" y2="22"></line>
+            </svg>
+          </div>
+          <h3 class="card-title">Offline Speech-to-Text</h3>
+          <p class="card-text">
+            On-device neural acoustic models transcribe voice into text instantly. Audio never leaves the phone's local memory sandbox.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+              <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+              <line x1="12" y1="20" x2="12.01" y2="20"></line>
+            </svg>
+          </div>
+          <h3 class="card-title">Direct Wireless Transport</h3>
+          <p class="card-text">
+            Connects over Wi-Fi Direct and Bluetooth Low Energy (BLE). Creates decentralized peer-to-peer links without cellular data.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Offline Text-to-Speech</h3>
+          <p class="card-text">
+            Receiving devices convert incoming text into natural voice output using offline TTS engines with customizable pitch and speech rate.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="card-title">99% Bandwidth Compression</h3>
+          <p class="card-text">
+            Instead of sending 500 KB of raw PCM voice streaming, iTantra transmits compact ~80-byte structured text micro-payloads over the wire.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">CRC32 Wire Verification</h3>
+          <p class="card-text">
+            Every transmission frame is protected with IEEE 802.3 CRC32 checksums. Corrupt or noisy packets are caught and rejected immediately.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">SIH Demo & Fault Injection</h3>
+          <p class="card-text">
+            Built-in Smart India Hackathon judging controls allow single-device evaluation with loopback peers, CRC corruption injection, and live telemetry.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How It Works (Pipeline) ───────────────────────────────────────────── -->
+  <section class="section" id="how-it-works" style="background: rgba(15, 23, 42, 0.3);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Zero-Cloud Architecture</span>
+        <h2 class="section-title">The Three-Stage Offline Pipeline</h2>
+        <p class="section-desc">
+          How iTantra delivers voice communication across hardware radios with maximum bandwidth efficiency.
+        </p>
+      </div>
+
+      <div class="pipeline-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-tag">Step 1 · Speech Capture & VAD</div>
+          <h3 class="card-title">Local Voice Transcription</h3>
+          <p class="card-text">
+            AudioRecord captures 16kHz 16-bit mono PCM. Voice Activity Detection (VAD) removes silence, and the on-device acoustic model transcribes speech into UTF-8 text.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-tag">Step 2 · Micro-Framing & Radio</div>
+          <h3 class="card-title">Zero-Loss Text Framing</h3>
+          <p class="card-text">
+            Text is framed into binary micro-payloads with header bytes, sequence numbers, priority flags, and IEEE 802.3 CRC32 checksums, then transmitted over Wi-Fi Direct or BLE.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-tag">Step 3 · Verification & Playback</div>
+          <h3 class="card-title">Local Speech Synthesis</h3>
+          <p class="card-text">
+            The receiver validates the CRC32 checksum, commits the message to local Room database history, and automatically speaks the text in the recipient's language.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Supported Languages Matrix ────────────────────────────────────────── -->
+  <section class="section" id="languages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Language Matrix</span>
+        <h2 class="section-title">Indian Scheduled Languages Support</h2>
+        <p class="section-desc">
+          Truthful audit of current language support, acoustic model availability, and on-device testing status.
+        </p>
+      </div>
+
+      <div class="table-container">
+        <table class="lang-table">
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>Native Script</th>
+              <th>Code</th>
+              <th>STT Status</th>
+              <th>TTS Status</th>
+              <th>Verification Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Hindi</strong></td>
+              <td>हिन्दी</td>
+              <td><code>hi</code></td>
+              <td><span class="status-pill status-ready">Available (42 MB)</span></td>
+              <td><span class="status-pill status-ready">Available (System)</span></td>
+              <td><span class="status-pill status-ready">Verified on Emulator</span></td>
+            </tr>
+            <tr>
+              <td><strong>Bengali</strong></td>
+              <td>বাংলা</td>
+              <td><code>bn</code></td>
+              <td><span class="status-pill status-ready">Available (SIH Demo)</span></td>
+              <td><span class="status-pill status-ready">Available (System)</span></td>
+              <td><span class="status-pill status-ready">Verified on Emulator</span></td>
+            </tr>
+            <tr>
+              <td><strong>English</strong></td>
+              <td>English</td>
+              <td><code>en</code></td>
+              <td><span class="status-pill status-ready">Available (System/Vosk)</span></td>
+              <td><span class="status-pill status-ready">Available (System)</span></td>
+              <td><span class="status-pill status-ready">Verified on Emulator</span></td>
+            </tr>
+            <tr>
+              <td><strong>Gujarati</strong></td>
+              <td>ગુજરાતી</td>
+              <td><code>gu</code></td>
+              <td><span class="status-pill status-coming">Model in Training</span></td>
+              <td><span class="status-pill status-available">System TTS</span></td>
+              <td><span class="status-pill status-coming">Text Validated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Marathi</strong></td>
+              <td>मराठी</td>
+              <td><code>mr</code></td>
+              <td><span class="status-pill status-coming">Model in Training</span></td>
+              <td><span class="status-pill status-available">System TTS</span></td>
+              <td><span class="status-pill status-coming">Text Validated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Kannada</strong></td>
+              <td>ಕನ್ನಡ</td>
+              <td><code>kn</code></td>
+              <td><span class="status-pill status-coming">Model in Training</span></td>
+              <td><span class="status-pill status-available">System TTS</span></td>
+              <td><span class="status-pill status-coming">Text Validated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Malayalam</strong></td>
+              <td>മലയാളം</td>
+              <td><code>ml</code></td>
+              <td><span class="status-pill status-coming">Model in Training</span></td>
+              <td><span class="status-pill status-available">System TTS</span></td>
+              <td><span class="status-pill status-coming">Text Validated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tamil</strong></td>
+              <td>தமிழ்</td>
+              <td><code>ta</code></td>
+              <td><span class="status-pill status-coming">Model in Training</span></td>
+              <td><span class="status-pill status-available">System TTS</span></td>
+              <td><span class="status-pill status-coming">Text Validated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Telugu</strong></td>
+              <td>తెలుగు</td>
+              <td><code>te</code></td>
+              <td><span class="status-pill status-coming">Model in Training</span></td>
+              <td><span class="status-pill status-available">System TTS</span></td>
+              <td><span class="status-pill status-coming">Text Validated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Odia</strong></td>
+              <td>ଓଡ଼ିଆ</td>
+              <td><code>or</code></td>
+              <td><span class="status-pill status-coming">Model in Training</span></td>
+              <td><span class="status-pill status-available">System TTS</span></td>
+              <td><span class="status-pill status-coming">Text Validated</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Screenshot Gallery ────────────────────────────────────────────────── -->
+  <section class="section" id="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Real Application Gallery</span>
+        <h2 class="section-title">Explore Verified On-Device Screens</h2>
+        <p class="section-desc">
+          Captured directly from an active Android testing session. Click through the tabs below to inspect each view.
+        </p>
+      </div>
+
+      <div class="gallery-nav">
+        <button class="gallery-btn active" data-screen="home">Dashboard</button>
+        <button class="gallery-btn" data-screen="ptt">Push-to-Talk</button>
+        <button class="gallery-btn" data-screen="models">Offline Models</button>
+        <button class="gallery-btn" data-screen="history">History Log</button>
+        <button class="gallery-btn" data-screen="connections">Connections</button>
+        <button class="gallery-btn" data-screen="diagnostics">Diagnostics</button>
+      </div>
+
+      <div class="gallery-view">
+        <div class="gallery-phone-container">
+          <div class="phone-frame" style="width: 290px; height: 580px;">
+            <div class="phone-island"></div>
+            <img id="galleryPhoneScreen" class="phone-screen" src="/assets/screenshots/screen_home.png" alt="iTantra Screen Preview">
+          </div>
+        </div>
+
+        <div class="gallery-info">
+          <span class="gallery-tag" id="galleryTag">Home Overview</span>
+          <h3 class="gallery-title" id="galleryTitle">Command Dashboard & SIH Demo Controls</h3>
+          <p class="gallery-desc" id="galleryDesc">
+            The central nerve center of iTantra. Features live connection indicators, quick peer simulation triggers for live hackathon judging, language selectors, and real-time link health.
+          </p>
+
+          <ul class="gallery-features-list" id="galleryFeatures">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-light);">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Single-tap Peer Simulator (Hindi, Bengali, English)</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-light);">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Real-time transport status (Wi-Fi Direct / Bluetooth)</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-light);">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Quick access to Models, Connect, and History</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Download Section ──────────────────────────────────────────────────── -->
+  <section class="download-section" id="download">
+    <div class="container">
+      <div class="download-card">
+        <div class="download-info">
+          <div class="badge badge-cyan">
+            <span class="dot"></span>
+            <span>Production Signed Release</span>
+          </div>
+
+          <h2 class="download-title">Download iTantra for Android</h2>
+          <p class="card-text">
+            Get the standalone, signed APK directly onto your phone. No Google Play account, no cloud registration, and no internet access required to use.
+          </p>
+
+          <div class="download-meta-grid">
+            <div class="download-meta-item">
+              <span class="download-meta-label">Version</span>
+              <span class="download-meta-val">v1.0.0 (Release)</span>
+            </div>
+            <div class="download-meta-item">
+              <span class="download-meta-label">File Size</span>
+              <span class="download-meta-val">11.9 MB</span>
+            </div>
+            <div class="download-meta-item">
+              <span class="download-meta-label">Android Compatibility</span>
+              <span class="download-meta-val">Android 7.0+ (API 24 to 35)</span>
+            </div>
+            <div class="download-meta-item">
+              <span class="download-meta-label">Signature Verification</span>
+              <span class="download-meta-val text-gradient">APK Scheme v2 Valid</span>
+            </div>
+          </div>
+
+          <div class="download-actions">
+            <a href="/download/iTantra-v1.0.0.apk" download="iTantra-v1.0.0.apk" class="btn btn-primary btn-lg js-download-btn" id="mainDownloadBtn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download APK (11.9 MB)</span>
+            </a>
+
+            <button class="btn btn-outline js-copy-btn" aria-label="Copy direct download link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Link</span>
+            </button>
+          </div>
+
+          <div class="download-security-note">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-amber);">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Always verify APK downloads originate from this official site or verified GitHub repository.</span>
+          </div>
+        </div>
+
+        <!-- QR Code Card -->
+        <div class="download-qr-box">
+          <div id="qrcodeContainer"></div>
+          <span class="qr-label">Scan to Download on Phone</span>
+          <span class="qr-sublabel">Point camera at QR code for instant mobile install</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Installation Guide ────────────────────────────────────────────────── -->
+  <section class="section" id="install">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Step-by-Step Guide</span>
+        <h2 class="section-title">How to Install iTantra on Android</h2>
+        <p class="section-desc">
+          Because iTantra is distributed directly as an APK without Google Play fees, Android will ask you to confirm standard sideloading permissions.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="install-step">
+          <div class="install-num">1</div>
+          <div class="install-content">
+            <h4>Open Website on Android</h4>
+            <p>Navigate to this website on Chrome or your mobile browser on your Android smartphone.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">2</div>
+          <div class="install-content">
+            <h4>Tap "Download APK"</h4>
+            <p>Click the primary download button to save <code>iTantra-v1.0.0.apk</code> (11.9 MB) to your device.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">3</div>
+          <div class="install-content">
+            <h4>Wait for Download Completion</h4>
+            <p>Check the notification drawer until the download is finished.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">4</div>
+          <div class="install-content">
+            <h4>Tap the Downloaded File</h4>
+            <p>Open the APK from the notification drawer or your phone's <strong>Downloads</strong> folder.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">5</div>
+          <div class="install-content">
+            <h4>Allow "Install Unknown Apps"</h4>
+            <p>If Android prompts <em>"For security, your phone is not allowed to install unknown apps"</em>, tap <strong>Settings</strong> and enable <strong>Allow from this source</strong>.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">6</div>
+          <div class="install-content">
+            <h4>Confirm Installation</h4>
+            <p>Tap <strong>Install</strong> on the package installer prompt.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">7</div>
+          <div class="install-content">
+            <h4>Launch iTantra</h4>
+            <p>Tap <strong>Open</strong> to start the application and view the onboarding guide.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">8</div>
+          <div class="install-content">
+            <h4>Grant Microphone Permission</h4>
+            <p>Tap <strong>Grant Permission</strong> when prompted so iTantra can capture voice during Push-to-Talk.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">9</div>
+          <div class="install-content">
+            <h4>Select Your Language</h4>
+            <p>Go to <strong>Models</strong> to select Hindi, Bengali, or English as your communication language.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">10</div>
+          <div class="install-content">
+            <h4>Transmit & Test</h4>
+            <p>Hold the Push-to-Talk button to speak, or use the <strong>SIH Demo Peer Simulator</strong> to test simulated receiving peers immediately!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ Section ───────────────────────────────────────────────────────── -->
+  <section class="section" id="faq" style="background: rgba(15, 23, 42, 0.3);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Frequently Asked Questions</span>
+        <h2 class="section-title">Common Questions & Answers</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Does iTantra require internet, 4G, or Wi-Fi routers?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            No. iTantra was designed specifically for zero-infrastructure environments. It runs on-device speech-to-text neural models and communicates peer-to-peer using Wi-Fi Direct or Bluetooth Low Energy without needing cellular connectivity or internet routers.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Why does Android display a warning when installing the APK?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Android displays a standard security prompt for any application downloaded directly from a browser rather than the Google Play Store. iTantra is verified with APK Signature Scheme v2, contains zero trackers, and collects zero external telemetry.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Are my voice recordings uploaded to any cloud servers?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            No. Audio captured during Push-to-Talk is processed strictly in local device RAM by on-device acoustic models. Raw audio is never saved to external storage, uploaded, or transmitted off-device.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>How does the Smart India Hackathon (SIH) Peer Simulator work?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            On the Home and PTT screens, iTantra provides dedicated loopback simulation buttons ("Hindi Peer", "Bengali Peer", "English Peer"). This allows evaluators and judges to test the complete decoding, CRC32 verification, and text-to-speech pipeline on a single phone without requiring a secondary physical device.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="22"></line>
+              </svg>
+            </div>
+            <span>iTantra</span>
+          </div>
+          <p class="card-text" style="max-width: 380px;">
+            Offline multilingual speech-to-text and text-to-speech communication system for low-bandwidth environments.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#how-it-works" class="footer-link">Architecture</a></li>
+            <li><a href="#languages" class="footer-link">Languages</a></li>
+            <li><a href="#download" class="footer-link">Download APK</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Legal & Project</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="https://github.com/rajvardhan-06/itantra" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Repository</a></li>
+            <li><a href="#install" class="footer-link">Install Instructions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 iTantra Team. Open-source under Apache 2.0.</span>
+        <span>Built for Smart India Hackathon & Disaster Resilience.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

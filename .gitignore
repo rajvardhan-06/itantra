@@ -60,3 +60,8 @@ Thumbs.db
 
 # Distribution folder
 dist/
+
+# Web dependencies & build outputs
+web/node_modules/
+web/dist/
+!web/public/download/*.apk
