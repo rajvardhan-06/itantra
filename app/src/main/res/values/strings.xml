@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">iTantra</string>
+    <string name="app_tagline">Offline Multilingual Communication</string>
+
+    <!-- Navigation labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_ptt">Push to Talk</string>
+    <string name="nav_language">Language</string>
+    <string name="nav_connection">Connections</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home Screen -->
+    <string name="home_status_offline">Offline Mode</string>
+    <string name="home_status_connected">Connected</string>
+    <string name="home_status_disconnected">Not Connected</string>
+    <string name="home_ptt_quick_title">Push to Talk</string>
+    <string name="home_ptt_quick_desc">Tap and hold to transmit voice message</string>
+    <string name="home_recent_title">Recent Transmissions</string>
+    <string name="home_no_recent">No recent transmissions</string>
+    <string name="home_quick_actions">Quick Access</string>
+
+    <!-- Push-to-Talk Screen (Phase 2 & Phase 3 VAD) -->
+    <string name="ptt_title">Push to Talk</string>
+    <string name="ptt_idle_hint">Press and hold to speak</string>
+    <string name="ptt_recording">Listening…</string>
+    <string name="vad_listening">Listening for speech…</string>
+    <string name="vad_speech_detected">Speaking detected</string>
+    <string name="vad_possible_silence">Waiting for speech…</string>
+    <string name="vad_silence_detected">Speech ended</string>
+    <string name="vad_speech_captured">Speech captured</string>
+    <string name="vad_error">Voice detection failed</string>
+    <string name="ptt_stopping">Stopping recording…</string>
+    <string name="ptt_audio_captured">Audio captured</string>
+    <string name="ptt_recording_failed">Recording failed</string>
+    <string name="ptt_cancel">Cancel</string>
+    <string name="ptt_cancel_recording">Cancel Recording</string>
+    <string name="ptt_processing">Processing…</string>
+    <string name="ptt_transcription_preview">Captured Audio</string>
+    <string name="ptt_send">Send</string>
+    <string name="ptt_clear">Clear</string>
+    <string name="ptt_sending">Sending…</string>
+    <string name="ptt_sent_success">Transmitted successfully</string>
+    <string name="ptt_error_recording">Recording failed. Please try again.</string>
+    <string name="ptt_error_transcription">Transcription unavailable — model not loaded.</string>
+    <string name="ptt_error_connection">No active connection. Connect a device first.</string>
+    <string name="ptt_tap_to_record">Hold to Speak</string>
+    <string name="ptt_tap_to_stop">Release to Stop</string>
+    <string name="ptt_permission_required">Microphone permission is required to capture audio.</string>
+    <string name="ptt_permission_grant">Grant Permission</string>
+    <string name="ptt_permission_settings">Open Settings</string>
+    <string name="ptt_permission_permanently_denied">Microphone access is permanently denied. Please enable it in App Settings to use Push-to-Talk.</string>
+    <string name="ptt_max_duration_hint">30s max</string>
+
+    <!-- Language Screen -->
+    <string name="language_title">Select Language</string>
+    <string name="language_active_label">Active Language</string>
+    <string name="language_search_hint">Search languages…</string>
+    <string name="language_selected">Language selected</string>
+
+    <!-- Connection Screen -->
+    <string name="connection_title">Device Connections</string>
+    <string name="connection_scan">Scan for Devices</string>
+    <string name="connection_scanning">Scanning…</string>
+    <string name="connection_connect">Connect</string>
+    <string name="connection_disconnect">Disconnect</string>
+    <string name="connection_no_devices">No devices found nearby</string>
+    <string name="connection_wifi_direct">Wi-Fi Direct</string>
+    <string name="connection_bluetooth">Bluetooth</string>
+    <string name="connection_device_name">Device Name</string>
+    <string name="connection_signal_strength">Signal Strength</string>
+    <string name="connection_connected_to">Connected to %1$s</string>
+    <string name="connection_error">Connection failed: %1$s</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Conversation History</string>
+    <string name="history_empty_title">No messages yet</string>
+    <string name="history_empty_desc">Start a Push-to-Talk session to transmit your first message.</string>
+    <string name="history_sent">Sent</string>
+    <string name="history_received">Received</string>
+    <string name="history_play_audio">Play Audio</string>
+    <string name="history_status_pending">Pending</string>
+    <string name="history_status_sent">Sent</string>
+    <string name="history_status_delivered">Delivered</string>
+    <string name="history_status_failed">Failed</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Active Language</string>
+    <string name="settings_comm_mode">Communication Mode</string>
+    <string name="settings_mode_ptt">Push-to-Talk</string>
+    <string name="settings_mode_phone">Phone Mode</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_system">System Default</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_notifications_incoming">Incoming message alerts</string>
+    <string name="settings_model_management">Offline AI Models</string>
+    <string name="settings_model_stt_hindi">Hindi Speech Model (Whisper-Tiny)</string>
+    <string name="settings_model_stt_size">~75 MB</string>
+    <string name="settings_model_not_loaded">Not Loaded</string>
+    <string name="settings_model_ready">Ready</string>
+    <string name="settings_about">About iTantra</string>
+    <string name="settings_about_version">Version %1$s</string>
+    <string name="settings_about_desc">Offline multilingual communication system using local speech recognition, text transmission, and speech synthesis. Designed for low-bandwidth environments.</string>
+
+    <!-- Common -->
+    <string name="common_loading">Loading…</string>
+    <string name="common_error">An error occurred</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_ok">OK</string>
+    <string name="unknown_language">Unknown</string>
+    <string name="content_desc_microphone">Microphone button</string>
+    <string name="content_desc_language_flag">Language flag</string>
+    <string name="content_desc_connection_status">Connection status indicator</string>
+
+    <!-- Phase 4: Offline Multilingual Speech-to-Text (STT) -->
+    <string name="stt_recognizing">Transcribing speech offline…</string>
+    <string name="stt_no_speech">No clear speech detected. Try speaking closer to the microphone.</string>
+    <string name="stt_model_missing">Offline speech model for %1$s is not installed.</string>
+    <string name="stt_model_unsupported">Offline speech recognition for %1$s is not yet available.</string>
+    <string name="stt_model_install">Install Model</string>
+    <string name="stt_model_installed">Installed</string>
+    <string name="stt_model_installing">Installing…</string>
+    <string name="stt_model_available">Available for Download</string>
+    <string name="stt_model_unavailable">Model Coming Soon</string>
+    <string name="stt_model_remove">Remove Model</string>
+    <string name="stt_model_removing">Removing…</string>
+    <string name="stt_confidence">Confidence: %1$d%%</string>
+    <string name="stt_latency">Latency: %1$d ms</string>
+    <string name="stt_transcription_label">Recognized Speech</string>
+
+    <!-- Phase 5: Text Message Protocol & Communication -->
+    <string name="protocol_priority_label">Message Priority</string>
+    <string name="priority_normal">Normal</string>
+    <string name="priority_important">Important</string>
+    <string name="priority_alert">Alert</string>
+    <string name="delivery_status_pending">Pending</string>
+    <string name="delivery_status_sending">Sending…</string>
+    <string name="delivery_status_sent">Sent</string>
+    <string name="delivery_status_delivered">Delivered (ACK)</string>
+    <string name="delivery_status_failed">Failed</string>
+    <string name="comm_retry_transmission">Retry Send</string>
+    <string name="comm_host_mode">Host Mode (Server)</string>
+    <string name="comm_client_mode">Client Mode</string>
+    <string name="comm_server_listening">Server listening on port %1$d</string>
+    <string name="comm_packet_checksum_valid">CRC32 Verified</string>
+
+    <!-- Phase 6: Offline Multilingual Text-to-Speech (TTS) -->
+    <string name="tts_title">Text-to-Speech (TTS)</string>
+    <string name="tts_status_idle">Ready to speak</string>
+    <string name="tts_status_initializing">Preparing voice…</string>
+    <string name="tts_status_speaking">Speaking…</string>
+    <string name="tts_status_paused">Speech paused</string>
+    <string name="tts_status_completed">Speech completed</string>
+    <string name="tts_status_language_unavailable">Voice unavailable for this language</string>
+    <string name="tts_status_error">Text-to-speech failed</string>
+    <string name="tts_play">Play</string>
+    <string name="tts_stop">Stop</string>
+    <string name="tts_replay">Replay</string>
+    <string name="tts_rate_label">Speech Rate: %1$.1fx</string>
+    <string name="tts_pitch_label">Voice Pitch: %1$.1fx</string>
+    <string name="tts_autoplay_label">Auto-play received messages</string>
+    <string name="tts_autoplay_desc">Automatically speak incoming messages upon delivery</string>
+</resources>
